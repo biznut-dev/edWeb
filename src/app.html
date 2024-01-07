@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./src/css/mystyles.css">
+	<!-- <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/superhero/bulmaswatch.min.css"> -->
+	%sveltekit.head%
+
+	<style>
+		/* Centered Logo Above */
+		.navbar.has-logo-above {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.section>.title {
+			text-align: center;
+		}
+
+		.modal-card-body>.content>.title {
+			text-align: center;
+		}
+
+		.pixelated {
+			image-rendering: pixelated;
+		}
+
+		.container {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding-top: 56.25%;
+			/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		}
+
+		/* Then style the iframe to fit in the container div with full height and width */
+		.responsive-iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script lang="ts">
+		$(document).ready(function () {
+
+			// Check for click events on the navbar burger icon
+			$(".navbar-burger").click(function () {
+
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				$(".navbar-burger").toggleClass("is-active");
+				$(".navbar-menu").toggleClass("is-active");
+
+			});
+		});
+	</script>
+</body>
+
 </html>

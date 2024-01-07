@@ -1,0 +1,81 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// // Set your dark theme colors
+// $background-dark: #121212;
+// $text-light: #fff;
+// $primary-dark: #00d1b2;
+// $link-dark: #ff3860;
+// $white: #121212;
+// $blue: #19e679;
+
+/** SCSS DARK THEME PRIMARY COLORS */
+$primary-100: #19e679;
+$primary-200: #50ea88;
+$primary-300: #6fed97;
+$primary-400: #88f0a6;
+$primary-500: #9ff3b5;
+$primary-600: #b4f6c3;
+
+
+/** SCSS DARK THEME SURFACE COLORS */
+// For body background color
+$surface-100: #121212;
+// For cards background color
+$surface-200: #282828;
+// For chips buttons, dropdowns background color
+$surface-300: #3f3f3f;
+// For sidebars, navbar background color
+$surface-400: #575757;
+// For modal, dialogs background color
+$surface-500: #717171;
+// For on background texts color
+$surface-600: #8b8b8b;
+
+$white: #ffff;
+
+$text: $white;
+$text-invert: $surface-100;
+$text-light: $white;
+$text-strong: $white;
+
+$scheme-main: $surface-100;
+$scheme-main-bis: $surface-200;
+$scheme-main-ter: $surface-300;
+$scheme-invert: $white;
+$background: $surface-200;
+
+$link: $primary-100;
+
+$navbar-background-color: $surface-300;
+
+$card-background-color: $scheme-main-bis;
+
+$dimensions: 256;
+
+// // Update Bulma's global variables
+// $family-sans-serif: "Nunito", sans-serif;
+// $grey-dark: #757763;
+// $grey-light-dark: #D0D1CD;
+
+// // Update some of Bulma's component variables for dark theme
+// $body-background-color: $background;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// // Customize the navbar color
+// $navbar-background-color: $background-dark;
+// $navbar-item-color: $text-light;
+// $navbar-burger-color: $text-light;
+// $navbar-item-hover-color: $text;
+// $navbar-item-hover-background-color: $blue;
+
+// // Customize dropdown menu
+// $navbar-dropdown-background-color: $background-dark;
+// $navbar-dropdown-content-background-color: $background-dark;
+// $navbar-dropdown-item-hover-color: $text-light;
+// $navbar-dropdown-item-hover-background-color: $grey-dark;
+
+// Import only what you need from Bulma
+@import "./node_modules/bulma/bulma.sass";
