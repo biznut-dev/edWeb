@@ -2,7 +2,6 @@
 	import Project from './Project.svelte';
 	import type { ShowcaseItem } from './Project.svelte';
 	import { onMount } from 'svelte';
-	import jq from 'jquery';
 
 	// big mow stuff
 	let bigMowList: Array<string> = [];

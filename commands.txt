@@ -1,5 +1,0 @@
-// start up the web page
-npm run dev
-
-// update the sass for CSS
-npm run css-build

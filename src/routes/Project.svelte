@@ -9,7 +9,6 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import jq from 'jquery';
 
 	// export class Thingy {
 	// 	title: string;
