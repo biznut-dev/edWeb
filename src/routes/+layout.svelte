@@ -45,8 +45,8 @@
 
 <footer class="footer">
 	<div class="content has-text-centered">
-		<a href="https://www.linkedin.com/in/ethandav/">LinkedIn</a> <br>
-		<a href="https://github.com/biznut-dev">GitHub</a> <br>
+		<a href="https://www.linkedin.com/in/ethandav/">LinkedIn</a> <br />
+		<a href="https://github.com/biznut-dev">GitHub</a> <br />
 		<p>The site was made using TypeScript, SvelteKit, and Bulma.</p>
 	</div>
 </footer>
