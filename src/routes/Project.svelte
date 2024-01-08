@@ -1,12 +1,3 @@
-<script lang="ts" context="module">
-	export type { ShowcaseItem };
-
-	interface ShowcaseItem {
-		title: string;
-		gif: string;
-	}
-</script>
-
 <script lang="ts">
 	import { onMount } from 'svelte';
 

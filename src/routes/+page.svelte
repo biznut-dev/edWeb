@@ -1,9 +1,13 @@
 <script lang="ts">
 	import Project from './Project.svelte';
-	import type { ShowcaseItem } from './Project.svelte';
+	//import type { ShowcaseItem } from './Project.svelte';
 	import { onMount } from 'svelte';
 
+	import headshot from '$lib/images/headshot1-modified.png';
+
 	// big mow stuff
+	import big_mow_thumb from '$lib/images/big-mow.png';
+
 	let bigMowList: Array<string> = [];
 	bigMowList.push('Submitted for BigMode Game Jam 2023');
 	bigMowList.push('Implemented custom movement using the physics engine and Enhanced Input system');
@@ -11,34 +15,43 @@
 		'Practiced collaborative coding/version control to implement various gameplay mechanics'
 	);
 
+	import big_mow3 from '$lib/images/big-mow3.gif';
+	import big_mow2 from '$lib/images/big-mow2.gif';
+	import big_mow1 from '$lib/images/big-mow1.gif';
 	let bigMowShowcase: ShowcaseItem[] = [
 		{
 			title: 'Flower, grass, and grass enemy models',
-			gif: '/src/media/big-mow3.gif'
+			gif: big_mow3
 		},
 		{
 			title: 'Flower collection, big mode transformation, and mini-mower projectile shooting',
-			gif: '/src/media/big-mow2.gif'
+			gif: big_mow2
 		},
 		{
 			title: 'Camera, controls, movement, collision, and rage level (speed level) UI',
-			gif: '/src/media/big-mow1.gif'
+			gif: big_mow1
 		}
 	];
 
 	// lorelei stuff
+	import lorelei_thumb from '$lib/images/lorelei-export.png';
+
 	let loreleiList: Array<string> = [];
 	loreleiList.push('Making in team of 8 for my Senior Capstone');
 	loreleiList.push('Implementing/designing dynamic hybrid turn-based/real-time RPG combat system');
 	loreleiList.push('Practicing software engineering principles and programming patterns');
 
 	// simulacra stuff
+	import simulacra_thumb from '$lib/images/simulacra-thumb.png';
+
 	let simulacraList: Array<string> = [];
 	simulacraList.push('Made for my Rhetoric of Games class');
 	simulacraList.push('Implemented a flamethrower and fireball mechanic');
 	simulacraList.push('Experimented with the Niagara and Cascade Particle Systems');
 
 	// machina stuff
+	import machina_thumb from '$lib/images/death-machina.png';
+
 	let machinaList: Array<string> = [];
 	machinaList.push('Made for my Advanced Level Design class');
 	machinaList.push(
@@ -65,7 +78,7 @@
 
 			<div class="columns is-multiline">
 				<Project
-					img="/src/media/big-mow.png"
+					img={big_mow_thumb}
 					title="Big Mow"
 					tools="Unreal Engine 5, Blueprints, C++, Blender"
 					accomplishments={bigMowList}
@@ -80,7 +93,7 @@
 					showcase={bigMowShowcase}
 				/>
 				<Project
-					img="/src/media/lorelei-export.png"
+					img={lorelei_thumb}
 					title="Goodbye Lorelei (WIP)"
 					tools="Unity, C#"
 					accomplishments={loreleiList}
@@ -90,7 +103,7 @@
 					description=""
 				/>
 				<Project
-					img="/src/media/simulacra-thumb.png"
+					img={simulacra_thumb}
 					title="Layers of Simulacra"
 					tools="Unreal Engine 5, Blueprints, C++"
 					accomplishments={simulacraList}
@@ -100,7 +113,7 @@
 					description=""
 				/>
 				<Project
-					img="/src/media/death-machina.png"
+					img={machina_thumb}
 					title="Death Machina"
 					tools="Unreal Engine 5, Blueprints"
 					accomplishments={machinaList}
@@ -110,7 +123,7 @@
 					description=""
 				/>
 				<Project
-					img="/src/media/"
+					img="$lib/images/"
 					title="Uncanny Valley"
 					tools="Unity, C#"
 					accomplishments={valleyList}
@@ -131,14 +144,14 @@
 						Hi, I'm Ethan. I'm a gameplay programmer with various projects in Unity and Unreal
 						Engine seeking opportunities in the gaming industry. I am very passionate about game
 						development and programming, and I constantly seek to improve at my craft. My main area
-						of expertise is mechanics and systems programming; though, I also have some knowledge of
+						of expertise is mechanics and systems programming, but I also have some knowledge of
 						shaders and the render pipelines as well. During my free-time, I enjoy producing music,
 						rock climbing, and competing in Super Smash Bros. tournaments.
 					</p>
 				</div>
 				<div class="column is-narrow">
 					<figure class="image is-256x256">
-						<img class="is-rounded" src="/src/media/headshot1-modified.png" />
+						<img class="is-rounded" src={headshot} />
 					</figure>
 				</div>
 			</div>

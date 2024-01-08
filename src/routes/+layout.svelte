@@ -1,9 +1,15 @@
+<script lang="ts">
+	import './mystyles.css';
+
+	import logo from '$lib/images/logo2-nobg.png';
+</script>
+
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- svelte-ignore a11y-no-redundant-roles -->
 <nav class="navbar has-logo-above" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 		<a class="navbar-item" href="/">
-			<img src="/src/media/logo2-nobg.png" height="58" />
+			<img src={logo} height="58" />
 		</a>
 		<a
 			role="button"
@@ -47,6 +53,6 @@
 	<div class="content has-text-centered">
 		<a href="https://www.linkedin.com/in/ethandav/">LinkedIn</a> <br />
 		<a href="https://github.com/biznut-dev">GitHub</a> <br />
-		<p>The site was made using TypeScript, SvelteKit, and Bulma.</p>
+		<p>The site was made using Vercel, TypeScript, SvelteKit, and Bulma.</p>
 	</div>
 </footer>
