@@ -49,6 +49,19 @@
 	simulacraList.push('Implemented a flamethrower and fireball mechanic');
 	simulacraList.push('Experimented with the Niagara and Cascade Particle Systems');
 
+	import simulacra_fireball from '$lib/images/simulacra-fireball.gif';
+	import simulacra_flamethrower from '$lib/images/simulacra-flamethrower.gif';
+	let simulacraShowcase: ShowcaseItem[] = [
+		{
+			title: 'Fireball that bounces off of walls',
+			gif: simulacra_fireball
+		},
+		{
+			title: 'Custom flamethrower weapon and simple enemy AI',
+			gif: simulacra_flamethrower
+		}
+	];
+
 	// machina stuff
 	import machina_thumb from '$lib/images/death-machina.png';
 
@@ -59,11 +72,43 @@
 	);
 	machinaList.push('Learned basics of the Unreal Level Editor and lighting/rendering engine');
 
+	import machina_ladder from '$lib/images/machina-ladder.gif';
+	import machina_bridge from '$lib/images/machina-bridge.gif';
+	import machina_level from '$lib/images/machina-level.gif';
+	let machinaShowcase: ShowcaseItem[] = [
+		{
+			title:
+				'3D modeling and layout for of the oil rig and lighting/resolution settings for stylization',
+			gif: machina_level
+		},
+		{
+			title: 'Bridge switch (level sequence) and water shader',
+			gif: machina_bridge
+		},
+		{
+			title: 'Power switch for ceiling lights, flashlight, and ladder',
+			gif: machina_ladder
+		}
+	];
+
 	// valley stuff
 	let valleyList: Array<string> = [];
 	valleyList.push('Made in a team of 5 for my Indie Game Development class');
 	valleyList.push('Implemented an inventory/item system');
 	valleyList.push('Implemented a puzzle piece mini-game');
+
+	import valley_inventory from '$lib/images/valley-inventory.gif';
+	import valley_puzzle from '$lib/images/valley-puzzle.gif';
+	let valleyShowcase: ShowcaseItem[] = [
+		{
+			title: 'Persistent inventory and item system',
+			gif: valley_inventory
+		},
+		{
+			title: 'Puzzle piece mini-game',
+			gif: valley_puzzle
+		}
+	];
 
 	onMount(() => {
 		//jq("#add").append(additional);
@@ -109,18 +154,23 @@
 					accomplishments={simulacraList}
 					time="Made during fall semester 2023"
 					video="https://drive.google.com/file/d/14NuUDW0RPJjO3voKuYRM8GXmvkidgrsR/preview"
-					game_link=""
-					description=""
+					game_link="https://drive.google.com/drive/folders/1pDwh0TV3OJeKSWOEZlvcTxnfkQWQeJHT?usp=drive_link"
+					description="The idea of this game is that each level represents a different layer of Baudrillard's theory of simulacra. 
+					The same level is played 4 times but with each having mechanics and aesthetics progressively more abstracted from reality."
+					showcase={simulacraShowcase}
 				/>
 				<Project
 					img={machina_thumb}
 					title="Death Machina"
-					tools="Unreal Engine 5, Blueprints"
+					tools="Unreal Engine 5, Blueprints, Blender"
 					accomplishments={machinaList}
 					time="Made during fall semester 2023"
 					video="https://drive.google.com/file/d/1rTP6KkNsBcm1U5FdNRpAoxSWp-ri9Wxd/preview"
-					game_link=""
-					description=""
+					game_link="https://drive.google.com/drive/folders/18VH-BHwPthxp46UqF3wQHHxKQC8AT_hT?usp=sharing"
+					description="The premise of this level is a horror game in which demons possess machines. To stop their source of power, 
+					the player must shut off an old oil rig and escape. The focus is more on atmosphere than gameplay, but through this 
+					project I was able to learn the basics of the Unreal Engine level editor, lighting engine, and blueprint scripting."
+					showcase={machinaShowcase}
 				/>
 				<Project
 					img="$lib/images/"
@@ -130,7 +180,10 @@
 					time="Released on itch.io on Dec 07, 2022"
 					video="https://drive.google.com/file/d/1Vx4MNRcPaZMY2J5Pbnw78kX2S5Km8IAA/preview"
 					game_link="https://biznut.itch.io/uncanny-valley"
-					description=""
+					description="Made in a team of 5, this game focuses on the story of an old western town called Uncanny Valley. 
+					Throughout the course of the game, the player talks with various NPCs, completes mini-games, and solves puzzles 
+					to try and solve the mystery of the town."
+					showcase={valleyShowcase}
 				/>
 			</div>
 		</section>
