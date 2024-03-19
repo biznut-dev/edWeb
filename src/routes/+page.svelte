@@ -111,6 +111,8 @@
 	];
 
 	// valley stuff
+	import valley_thumb from '$lib/images/wipcowbo.png';
+
 	let valleyList: Array<string> = [];
 	valleyList.push('Made in a team of 5 for my Indie Game Development class');
 	valleyList.push('Implemented an inventory/item system');
@@ -173,7 +175,7 @@
 					various programming patterns such as delegates, singletons, and finite state machines."
 					showcase={loreleiShowcase}
 				/>
-				<Project
+				<!-- <Project
 					img={simulacra_thumb}
 					title="Layers of Simulacra"
 					tools="Unreal Engine 5, Blueprints, C++"
@@ -184,7 +186,7 @@
 					description="The idea of this game is that each level represents a different layer of Baudrillard's theory of simulacra. 
 					The same level is played 4 times but with each having mechanics and aesthetics progressively more abstracted from reality."
 					showcase={simulacraShowcase}
-				/>
+				/> -->
 				<Project
 					img={machina_thumb}
 					title="Death Machina"
@@ -199,7 +201,7 @@
 					showcase={machinaShowcase}
 				/>
 				<Project
-					img="$lib/images/"
+					img={valley_thumb}
 					title="Uncanny Valley"
 					tools="Unity, C#"
 					accomplishments={valleyList}
