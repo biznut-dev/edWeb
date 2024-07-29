@@ -1,7 +1,19 @@
 <script lang="ts">
 	import './mystyles.css';
-
 	import logo from '$lib/images/logo2-nobg.png';
+
+	import { onMount } from 'svelte';
+
+	// hamburger menu on mobile
+	let navbarBurger: Element;
+	let navbarMenu: Element;
+
+	onMount(() => {
+		navbarBurger.addEventListener('click', () => {
+			navbarBurger.classList.toggle('is-active');
+			navbarMenu.classList.toggle('is-active');
+		});
+	});
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
@@ -12,6 +24,7 @@
 			<img src={logo} height="58" />
 		</a>
 		<a
+			bind:this={navbarBurger}
 			role="button"
 			class="navbar-burger burger"
 			aria-label="menu"
@@ -23,7 +36,7 @@
 			<span aria-hidden="true" />
 		</a>
 	</div>
-	<div id="navbarBasicExample" class="navbar-menu">
+	<div id="navbarBasicExample" class="navbar-menu" bind:this={navbarMenu}>
 		<div class="navbar-start">
 			<a class="navbar-item" href="/"> Home </a>
 			<a class="navbar-item" href="/resume"> Resume </a>
