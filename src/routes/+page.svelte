@@ -37,23 +37,12 @@
 	import lorelei_thumb from '$lib/images/lorelei-export.png';
 
 	let loreleiList: Array<string> = [];
-	loreleiList.push('Making in team of 8 for my Senior Capstone');
-	loreleiList.push('Implementing/designing dynamic hybrid turn-based/real-time RPG combat system');
-	loreleiList.push('Practicing software engineering principles and programming patterns');
+	loreleiList.push('Made in team of 8 for my Senior Capstone');
+	loreleiList.push('Practiced software engineering principles, programming patterns, and UX design');
 
 	import lorelei_realtime from '$lib/images/lorelei-realtime.gif';
 	import lorelei_turnbased from '$lib/images/lorelei-turnbased.gif';
 	let loreleiShowcase: ShowcaseItem[] = [
-		{
-			title:
-				'WIP: Multiple party members and enemies to allow for Darkest Dungeon-style strategic combat, telegraphed enemy attacks inspired by Slay the Spire, streamlined items system, blocking/parrying, multiple ability options per character, different enemy types with different AI attack patterns, additional resource management through MP, more sophisticated UI',
-			gif: ''
-		},
-		{
-			title:
-				'Modular system that allows for seamless transition into real-time through the resuse of the abilities/actions code',
-			gif: lorelei_realtime
-		},
 		{
 			title: 'Traditional turn-based RPG system made from scratch',
 			gif: lorelei_turnbased
@@ -160,13 +149,13 @@
 				/>
 				<Project
 					img={lorelei_thumb}
-					title="Goodbye Lorelei (WIP)"
+					title="Goodbye Lorelei Demo"
 					tools="Unity, C#"
 					accomplishments={loreleiList}
-					time="ETA 2024"
+					time="Released on itch.io on Aug 14, 2024"
 					video="https://drive.google.com/file/d/1xNxZ2ugtkVrh7_NNoIKEDz5IBUz7okIT/preview"
-					game_link="https://drive.google.com/drive/folders/1Ln3ysTmgSuvVup-OzvXoVOGN2T9Zniwh?usp=sharing"
-					description="For Goodbye Lorelei, I am the lead programmer, combat programmer, and lead combat designer. Through this 
+					game_link="https://nosedive-studios.itch.io/goodbye-lorelei"
+					description="For Goodbye Lorelei, I was the lead programmer, combat programmer, and assistant combat designer. Through this 
 					project, I have learned how to implement a complex, data-driven back-end to fulfill the needs of a custom RPG combat 
 					system. To give an overview, the game revolves around the mechanic labeled 'Rainbow Body' (RB). Once the RB meter is 
 					at least a quarter full, the player can activate RB, transforming the combat from a traditional turn-based system 
